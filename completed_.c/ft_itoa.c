@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jthor <jthor@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/29 21:37:17 by jthor             #+#    #+#             */
+/*   Updated: 2021/09/29 21:42:38 by jthor            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 static int	calc_total_len(int n);
@@ -35,7 +47,7 @@ static int	calc_total_len(int n)
 
 static void	fill_array(int n, int numb_len, char *retptr)
 {
-	int 			loop_ctrl;
+	int				loop_ctrl;
 	int				index_ctrl;
 	unsigned int	nb;
 
