@@ -6,7 +6,7 @@
 /*   By: jthor <jthor@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 20:32:03 by jthor             #+#    #+#             */
-/*   Updated: 2021/10/06 21:06:49 by jthor            ###   ########.fr       */
+/*   Updated: 2021/10/12 21:44:34 by jthor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_lstsize(t_list *lst)
 	int	i;
 
 	i = 0;
-	while (!lst)
+	while (lst)
 	{
 		i++;
 		lst = lst->next;
