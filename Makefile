@@ -39,3 +39,5 @@ bonus : $(NAME) $(BONUS_OBJS)
 re : fclean all
 
 rebonus : fclean bonus
+
+.PHONY : all .c.o clean fclean bonus re rebonus
