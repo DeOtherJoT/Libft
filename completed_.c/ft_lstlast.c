@@ -6,7 +6,7 @@
 /*   By: jthor <jthor@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 00:06:34 by jthor             #+#    #+#             */
-/*   Updated: 2021/10/06 21:05:45 by jthor            ###   ########.fr       */
+/*   Updated: 2021/10/13 21:18:10 by jthor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	t_list	*ptr;
+	t_list	*ret;
 
-	ptr = lst;
-	while (ptr->next)
-		ptr = ptr->next;
-	return (ptr);
+	if (!lst)
+		return (NULL);
+	ret = lst;
+	while (ret->next)
+		ret = ret->next;
+	return (ret);
 }
