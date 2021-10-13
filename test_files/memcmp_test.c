@@ -11,6 +11,8 @@ int	main(void)
 	char	*str4 = "";
 	char	*str5 = "Hello World";
 	char	*str6 = "Hello\0World";
+	char	s1[] = {0, 0, 127, 0};
+	char	s2[] = {0, 0, 42, 0};
 
 	printf("Actual function: %d\n", memcmp(str1, str2, 5));
 	printf("Your function:   %d\n", ft_memcmp(str1, str2, 5));
@@ -42,6 +44,10 @@ int	main(void)
 
 	printf("Actual function: %d\n", memcmp(str1, str6, 13));
 	printf("Your function:   %d\n", ft_memcmp(str1, str6, 13));
+	printf("\n");
+
+	printf("Actual function: %d\n", memcmp(s1, s2, 4));
+	printf("Your function:   %d\n", ft_memcmp(s1, s2, 4));
 	printf("\n");
 	return (0);
 }
