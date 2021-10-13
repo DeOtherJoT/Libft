@@ -6,7 +6,7 @@
 /*   By: jthor <jthor@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 21:38:26 by jthor             #+#    #+#             */
-/*   Updated: 2021/09/29 21:38:54 by jthor            ###   ########.fr       */
+/*   Updated: 2021/10/13 12:21:09 by jthor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	**ft_split(char const *s, char c)
 		temp = word_split(s, c, ret, i);
 		if (!temp)
 			return (NULL);
-		while (*s != c)
+		while (*s && *s != c)
 			s++;
 		i++;
 	}
