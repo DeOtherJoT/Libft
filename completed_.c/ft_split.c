@@ -6,7 +6,7 @@
 /*   By: jthor <jthor@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 21:38:26 by jthor             #+#    #+#             */
-/*   Updated: 2021/10/13 12:21:09 by jthor            ###   ########.fr       */
+/*   Updated: 2021/10/13 14:01:12 by jthor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ char	**ft_split(char const *s, char c)
 	int		i;
 	int		temp;
 
+	if (!s)
+		return (NULL);
 	words = word_count(s, c);
 	ret = (char **)malloc((words + 1) * sizeof(char *));
 	if (!ret)
